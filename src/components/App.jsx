@@ -12,7 +12,6 @@ import { FriendList } from './friends/FriendList';
 export const App = () => {
   return (
     <div>
-
       <Profile
         username={user.username}
         tag={user.tag}
@@ -20,15 +19,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-
       <Section title="Upload stats">
         <Statistics stats={statistic} />
       </Section>
-
-      {/* <Statistics title="Upload stats" stats={statistic} /> */}
-
       <FriendList friends={friends} />;
-
     </div>
   );
 };

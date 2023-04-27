@@ -8,13 +8,6 @@ export const Profile = ({
   avatar = defaultImage,
   stats: { followers, views, likes },
 }) => {
-  // const {
-  //   username,
-  //   tag,
-  //   location,
-  //   avatar = defaultImage,
-  //   stats: { followers, views, likes },
-  // } = user;
   return (
     <div className="profile">
       <div className="profile__description">
