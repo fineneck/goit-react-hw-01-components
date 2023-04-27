@@ -1,26 +1,26 @@
-export const Statistics = ({ title, stats }) => {
-  return (
-    <section class="statistics">
-      <h2 class="title">{title}</h2>
+import PropTypes from 'prop-types';
 
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">.docx</span>
-          <span class="percentage">{stats}</span>
+export const Statistics = ({ stats }) => {
+  return (
+    // <section className="statistics">
+    //   {title && <h2 className="title">{title}</h2>}
+
+    <ul className="stat-list">
+      {stats.map(stat => (
+        <li className="item" key={stat.id}>
+          <span className="label">{stat.label}</span>
+          <span className="percentage">{stat.percentage}%</span>
         </li>
-        <li class="item">
-          <span class="label">.mp3</span>
-          <span class="percentage">{stats}</span>
-        </li>
-        <li class="item">
-          <span class="label">.pdf</span>
-          <span class="percentage">{stats}</span>
-        </li>
-        <li class="item">
-          <span class="label">.mp4</span>
-          <span class="percentage">{stats}</span>
-        </li>
-      </ul>
-    </section>
+      ))}
+    </ul>
+    // </section>
   );
+};
+
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
