@@ -1,13 +1,13 @@
 import user from '../data/user.json';
 import statistic from '../data/data.json';
 import friends from '../data/friends.json';
-// import transactions from '../data/transactions.json';
+import transactions from '../data/transactions.json';
 
 import { Profile } from './profile/Profile';
 import { Statistics } from './statistics/Statistics';
 import { Section } from './section/Section';
 import { FriendList } from './friends/FriendList';
-// import { TransactionHistory } from './transaction/TransactionHistory';
+import { TransactionHistory } from './transaction/TransactionHistory';
 
 export const App = () => {
   return (
@@ -23,6 +23,7 @@ export const App = () => {
         <Statistics stats={statistic} />
       </Section>
       <FriendList friends={friends} />;
+      <TransactionHistory items={transactions} />;
     </div>
   );
 };
