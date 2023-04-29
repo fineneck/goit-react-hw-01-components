@@ -3,6 +3,7 @@ export const theme = {
     white: '#fff',
     secondaryText: '#768696',
     title: '#878c8f',
+    isOnline: '#56ab57',
 
     border: '#e4e9f0',
 

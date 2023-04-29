@@ -10,8 +10,6 @@ export const ProfileBox = styled.div`
 
 export const PrUser = styled.div`
   padding: ${props => props.theme.spacing(5)};
-  border-top-left-radius: ${props => props.theme.spacing(1)};
-  border-top-right-radius: ${props => props.theme.spacing(1)};
   background-color: ${props => `${props.theme.colors.white}`};
 `;
 
@@ -37,8 +35,6 @@ export const PrStats = styled.ul`
   display: flex;
   justify-content: center;
 
-  border-bottom-left-radius: ${props => props.theme.spacing(1)};
-  border-bottom-right-radius: ${props => props.theme.spacing(1)};
   background-color: ${props => `${props.theme.colors.bgProfile}`};
 `;
 

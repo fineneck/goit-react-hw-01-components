@@ -20,12 +20,6 @@ export const StatItem = styled.li`
   :not(:last-child) {
     border-right: 1px;
   };
-  :first-of-type {
-    border-bottom-left-radius: ${props => props.theme.spacing(1)};
-  };
-  :last-of-type {
-    border-bottom-right-radius: ${props => props.theme.spacing(1)};
-  };
 `;
 
 export const StatLabel = styled.span`

@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
 import { imgSize } from "utils";
+import { FrItem, StatusOn, FrImg, FrName } from "./FriendListItem.styled";
 
 export const FriendListItem = ({ id, avatar, name, isOnline }) => {
   return (
-    <li className="item" key={id}>
-      <span className="status">{isOnline}</span>
-      <img
-        className="avatar"
+    <FrItem key={id}>
+      <StatusOn>{isOnline}</StatusOn>
+      <FrImg
         src={avatar}
         alt="User avatar"
         width={imgSize.friends}
         height={imgSize.friends}
       />
-      <p className="name">{name}</p>
-    </li>
+      <FrName>{name}</FrName>
+    </FrItem>
   );
 };
 

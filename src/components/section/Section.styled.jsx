@@ -15,6 +15,4 @@ export const Title = styled.h2`
   color: ${props => `${props.theme.colors.title}`};
 
   background-color: ${props => `${props.theme.colors.white}`};
-  border-top-left-radius: ${props => props.theme.spacing(1)};
-  border-top-right-radius: ${props => props.theme.spacing(1)};
 `;
