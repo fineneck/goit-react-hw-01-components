@@ -1,7 +1,18 @@
 import PropTypes from 'prop-types';
-import { ProfileBox, ProfileUser, ProfileAvatar, ProfileName, ProfileTag, ProfileLocation, ProfileStats, ProfileStatsEl, ProfileStatsLabel, ProfileStatsQuantity } from "components/profile/Profile.styled";
+import {
+  ProfileBox,
+  PrUser,
+  PrAvatar,
+  PrName,
+  PrTag,
+  PrLocation,
+  PrStats,
+  PrStatsEl,
+  PrStatsLabel,
+  PrStatsQuantity,
+} from 'components/profile/Profile.styled';
 import defaultImage from 'img/Default-welcomer.png';
-import { imgSize } from "utils";
+import { imgSize } from 'utils';
 
 export const Profile = ({
   username,
@@ -12,32 +23,32 @@ export const Profile = ({
 }) => {
   return (
     <ProfileBox>
-      <ProfileUser>
-        <ProfileAvatar
+      <PrUser>
+        <PrAvatar
           src={avatar}
           alt={username}
           width={imgSize.profile}
           height={imgSize.profile}
         />
-        <ProfileName>{username}</ProfileName>
-        <ProfileTag>{tag}</ProfileTag>
-        <ProfileLocation>{location}</ProfileLocation>
-      </ProfileUser>
+        <PrName>{username}</PrName>
+        <PrTag>{tag}</PrTag>
+        <PrLocation>{location}</PrLocation>
+      </PrUser>
 
-      <ProfileStats>
-        <ProfileStatsEl>
-          <ProfileStatsLabel>Followers: </ProfileStatsLabel>
-          <ProfileStatsQuantity>{followers}</ProfileStatsQuantity>
-        </ProfileStatsEl>
-        <ProfileStatsEl>
-          <ProfileStatsLabel>Views: </ProfileStatsLabel>
-          <ProfileStatsQuantity>{views}</ProfileStatsQuantity>
-        </ProfileStatsEl>
-        <ProfileStatsEl>
-          <ProfileStatsLabel>Likes: </ProfileStatsLabel>
-          <ProfileStatsQuantity>{likes}</ProfileStatsQuantity>
-        </ProfileStatsEl>
-      </ProfileStats>
+      <PrStats>
+        <PrStatsEl>
+          <PrStatsLabel>Followers: </PrStatsLabel>
+          <PrStatsQuantity>{followers}</PrStatsQuantity>
+        </PrStatsEl>
+        <PrStatsEl>
+          <PrStatsLabel>Views: </PrStatsLabel>
+          <PrStatsQuantity>{views}</PrStatsQuantity>
+        </PrStatsEl>
+        <PrStatsEl>
+          <PrStatsLabel>Likes: </PrStatsLabel>
+          <PrStatsQuantity>{likes}</PrStatsQuantity>
+        </PrStatsEl>
+      </PrStats>
     </ProfileBox>
   );
 };

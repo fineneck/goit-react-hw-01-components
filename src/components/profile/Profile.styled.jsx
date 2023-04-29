@@ -5,32 +5,32 @@ export const ProfileBox = styled.div`
   // border-radius: ${props => props.theme.spacing(2)};
 `;
 
-export const ProfileUser = styled.div`
+export const PrUser = styled.div`
   padding: ${props => props.theme.spacing(5)};
   border-top-left-radius: ${props => props.theme.spacing(1)};
   border-top-right-radius: ${props => props.theme.spacing(1)};
   background-color: ${props => `${props.theme.colors.white}`};
 `;
 
-export const ProfileAvatar = styled.img`
+export const PrAvatar = styled.img`
   border-radius: 50%;
 `;
 
-export const ProfileName = styled.p`
+export const PrName = styled.p`
   padding: 16px 0 4px 0;
   font-weight: 700;
 `;
 
-export const ProfileTag = styled.p`
+export const PrTag = styled.p`
   padding-bottom: ${props => props.theme.spacing(1)};
   color: ${props => `${props.theme.colors.secondaryText}`};
 `;
 
-export const ProfileLocation = styled.p`
+export const PrLocation = styled.p`
   color: ${props => `${props.theme.colors.secondaryText}`};
 `;
 
-export const ProfileStats = styled.ul`
+export const PrStats = styled.ul`
   display: flex;
   justify-content: center;
 
@@ -39,7 +39,7 @@ export const ProfileStats = styled.ul`
   background-color: ${props => `${props.theme.colors.bgProfile}`};
 `;
 
-export const ProfileStatsEl = styled.li`
+export const PrStatsEl = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,17 +48,17 @@ export const ProfileStatsEl = styled.li`
   padding: ${props => props.theme.spacing(3)};
   width: 100%;
 
-  :not(:last-child){
-    border-right: 1px solid ${props => `${props.theme.colors.border}`}
- };
+  :not(:last-child) {
+    border-right: 1px solid ${props => `${props.theme.colors.border}`};
+  }
 `;
 
-export const ProfileStatsLabel = styled.span`
+export const PrStatsLabel = styled.span`
   font-size: ${props => props.theme.spacing(3)};
   color: ${props => `${props.theme.colors.secondaryText}`};
 `;
 
-export const ProfileStatsQuantity = styled.span`
+export const PrStatsQuantity = styled.span`
   font-size: ${props => props.theme.spacing(3)};
   font-weight: 700;
 `;
