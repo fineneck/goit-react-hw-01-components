@@ -1,15 +1,25 @@
 import PropTypes from 'prop-types';
+import {
+  StatList,
+  StatItem,
+  StatLabel,
+  StatPercentage,
+} from './Statistics.styled';
+import { Section } from 'components/section/Section';
+import { getRandomColor } from "utils";
 
 export const Statistics = ({ stats }) => {
   return (
-    <ul className="stat-list">
-      {stats.map(stat => (
-        <li className="item" key={stat.id}>
-          <span className="label">{stat.label}</span>
-          <span className="percentage">{stat.percentage}%</span>
-        </li>
-      ))}
-    </ul>
+    <Section>
+      <StatList>
+        {stats.map(stat => (
+          <StatItem key={stat.id} style={getRandomColor()}>
+            <StatLabel>{stat.label}</StatLabel>
+            <StatPercentage>{stat.percentage}%</StatPercentage>
+          </StatItem>
+        ))}
+      </StatList>
+    </Section>
   );
 };
 

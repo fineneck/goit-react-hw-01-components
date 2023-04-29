@@ -10,7 +10,7 @@ import {
   PrStatsEl,
   PrStatsLabel,
   PrStatsQuantity,
-} from 'components/profile/Profile.styled';
+} from './Profile.styled';
 import defaultImage from 'img/Default-welcomer.png';
 import { imgSize } from 'utils';
 
