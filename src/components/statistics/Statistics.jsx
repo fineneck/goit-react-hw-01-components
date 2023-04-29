@@ -6,7 +6,7 @@ import {
   StatPercentage,
 } from './Statistics.styled';
 import { Section } from 'components/section/Section';
-import { getRandomColor } from "utils";
+import { getRandomColor } from 'utils';
 
 export const Statistics = ({ stats }) => {
   return (

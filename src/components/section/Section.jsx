@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Box, Title }  from "./Section.styled";
+import { Box, Title } from './Section.styled';
 
 export const Section = ({ title, children }) => {
   return (
@@ -8,9 +8,9 @@ export const Section = ({ title, children }) => {
       {children}
     </Box>
   );
-}
+};
 
 Section.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node,
-}
+};

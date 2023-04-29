@@ -9,7 +9,7 @@ import { Section } from 'components/section/Section';
 import { FriendList } from 'components/friends/FriendList';
 import { TransactionHistory } from 'components/transaction/TransactionHistory';
 
-import { Container } from "components/App/App.styled";
+import { Container } from 'components/App/App.styled';
 
 export const App = () => {
   return (

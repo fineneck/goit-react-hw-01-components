@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { imgSize } from "utils";
-import { FrItem, Status, FrImg, FrName } from "./FriendListItem.styled";
+import { imgSize } from 'utils';
+import { FrItem, Status, FrImg, FrName } from './FriendListItem.styled';
 
 export const FriendListItem = ({ id, avatar, name, isOnline }) => {
   return (

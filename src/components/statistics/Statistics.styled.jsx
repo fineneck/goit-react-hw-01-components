@@ -19,15 +19,15 @@ export const StatItem = styled.li`
 
   :not(:last-child) {
     border-right: 1px;
-  };
+  }
 `;
 
 export const StatLabel = styled.span`
   font-size: ${props => props.theme.spacing(3)};
-  color: ${props => `${props.theme.colors.white}`}
+  color: ${props => `${props.theme.colors.white}`};
 `;
 
 export const StatPercentage = styled.span`
   font-size: ${props => props.theme.spacing(4)};
-  color: ${props => `${props.theme.colors.white}`}
+  color: ${props => `${props.theme.colors.white}`};
 `;

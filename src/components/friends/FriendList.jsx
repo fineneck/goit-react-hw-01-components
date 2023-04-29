@@ -1,5 +1,5 @@
 import { FriendListItem } from './FriendListItem';
-import { FrList } from "./FriendList.styled";
+import { FrList } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -13,5 +13,5 @@ export const FriendList = ({ friends }) => {
         />
       ))}
     </FrList>
-  )
+  );
 };
