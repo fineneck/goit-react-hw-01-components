@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { imgSize } from "utils";
 
 export const FriendListItem = ({ id, avatar, name, isOnline }) => {
   return (
@@ -8,8 +9,8 @@ export const FriendListItem = ({ id, avatar, name, isOnline }) => {
         className="avatar"
         src={avatar}
         alt="User avatar"
-        width="56px"
-        height="56px"
+        width={imgSize.friends}
+        height={imgSize.friends}
       />
       <p className="name">{name}</p>
     </li>

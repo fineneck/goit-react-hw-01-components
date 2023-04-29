@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import defaultImage from '../../img/Default-welcomer.png';
+import { ProfileBox, ProfileUser, ProfileAvatar, ProfileName, ProfileTag, ProfileLocation, ProfileStats, ProfileStatsEl, ProfileStatsLabel, ProfileStatsQuantity } from "components/profile/Profile.styled";
+import defaultImage from 'img/Default-welcomer.png';
+import { imgSize } from "utils";
 
 export const Profile = ({
   username,
@@ -9,35 +11,34 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className="profile">
-      <div className="profile__description">
-        <img
+    <ProfileBox>
+      <ProfileUser>
+        <ProfileAvatar
           src={avatar}
           alt={username}
-          width="96px"
-          height="96px"
-          className="profile__avatar"
+          width={imgSize.profile}
+          height={imgSize.profile}
         />
-        <p className="profile__name">{username}</p>
-        <p className="profile__tag">{tag}</p>
-        <p className="profile__location">{location}</p>
-      </div>
+        <ProfileName>{username}</ProfileName>
+        <ProfileTag>{tag}</ProfileTag>
+        <ProfileLocation>{location}</ProfileLocation>
+      </ProfileUser>
 
-      <ul className="stats">
-        <li>
-          <span className="stats__label">Followers: </span>
-          <span className="stats__quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="stats__label">Views: </span>
-          <span className="stats__quantity">{views}</span>
-        </li>
-        <li>
-          <span className="stats__label">Likes: </span>
-          <span className="stats__quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <ProfileStats>
+        <ProfileStatsEl>
+          <ProfileStatsLabel>Followers: </ProfileStatsLabel>
+          <ProfileStatsQuantity>{followers}</ProfileStatsQuantity>
+        </ProfileStatsEl>
+        <ProfileStatsEl>
+          <ProfileStatsLabel>Views: </ProfileStatsLabel>
+          <ProfileStatsQuantity>{views}</ProfileStatsQuantity>
+        </ProfileStatsEl>
+        <ProfileStatsEl>
+          <ProfileStatsLabel>Likes: </ProfileStatsLabel>
+          <ProfileStatsQuantity>{likes}</ProfileStatsQuantity>
+        </ProfileStatsEl>
+      </ProfileStats>
+    </ProfileBox>
   );
 };
 
